@@ -37,5 +37,4 @@ Inspired From: PhonePe Pulse
 By completing this project, you will gain hands-on experience in data extraction, processing, and visualization, as well as working with databases, dashboards, and web development. This project will provide a foundation for further learning and development in these areas, helping you build a portfolio of practical skills.
 
 ## Contribution:
-
-- [KADAMBI KASHYAP]([https://github.com/KadambiKashyap])
+[KADAMBI KASHYAP]([https://github.com/KadambiKashyap])
