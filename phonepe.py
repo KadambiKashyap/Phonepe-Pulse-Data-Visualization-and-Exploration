@@ -17,7 +17,7 @@ my_db = sql.connect(
       
 mycursor = my_db.cursor() 
 
-#########################################----RETREIVING TABLE NAME---############################# 
+#########################################----RETREIVING TABLE NAME---############################################# 
 
 def get_table_name(table_index):
     my_db = sql.connect( 
@@ -43,7 +43,7 @@ def get_table_name(table_index):
     return table_name
 
 
-#########################################----RETREIVING TABLE DATA---############################# 
+#########################################----RETREIVING TABLE DATA---############################################# 
 
 def get_table_data(table_name):
     my_db = sql.connect( 
@@ -69,7 +69,7 @@ def get_table_data(table_name):
     return years, quarters, states
 
 
-#########################################----RETREIVING STATE NAMES---############################# 
+#########################################----RETREIVING STATE NAMES---############################################# 
 
 def get_states_from_table(table_name):
     my_db = sql.connect( 
@@ -90,7 +90,7 @@ def get_states_from_table(table_name):
 
 
 
-#########################################----PLOTTING CHARTS---############################# 
+#########################################----PLOTTING CHARTS---##################################################
 
 # Plotting functions
 def plot_bar_chart(df, x, y,title):
@@ -146,7 +146,7 @@ def multiselect_years_quarters(years, quarters, table_name):
 
 
 
-#########################################----FETCHING DATAFRAME from TABLES ---############################# 
+#########################################----FETCHING DATAFRAME from TABLES ---####################################### 
 
 
 def fetch_data_from_table(table_name):
@@ -174,7 +174,7 @@ def fetch_data_from_table(table_name):
 
 
 
-#########################################----GENERATING DATA FUNCTIONS ---############################# 
+#########################################----GENERATING DATA FUNCTIONS ---#########################################
 
 def Transaction_data(table_name, selected_years, selected_quarters):
 
@@ -510,7 +510,7 @@ def Top_transaction_pincode(table_name, selected_years, selected_quarters, selec
 
 
 
-#########################################----GENERAL INSIGHTS---###################################
+#########################################----GENERAL INSIGHTS---#######################################"
 
 
 # What is the Total amount of Aggregated Transactions in Top 10 States
@@ -900,6 +900,8 @@ if selected == 'HOME':
         
 
 
+##########################################---- EXPLORATION PAGE ----##############################################
+
 if selected == 'EXPLORATION':
 
     tab1,tab2,tab3 = st.tabs([":red[AGGREGATED ANALYSIS]",":red[MAP ANALYSIS]",":red[TOP ANALYSIS]"])
@@ -1137,9 +1139,7 @@ if selected == 'EXPLORATION':
                 st.error("Table not found.")
 
 
-
-
-
+##########################################---- INSIGHTS PAGE ----##############################################
 if selected == 'INSIGHTS':
     st.markdown("# ")
     st.subheader(":red[Select one of the options to have insights on Phonepe Data]", anchor=False)
